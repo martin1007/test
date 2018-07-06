@@ -1,59 +1,10 @@
 from django.contrib import admin
 
-from .models import Historical_Cash_Flow_Statement, Assumptions, Scenario_Percentages, Revenue_Assumptions, COGS_Assumptions, Selling_Marketing_Assumptions, General_Administrative_Assumptions, Research_Development_Assumptions, Income_Tax_Provision_Assumptions, EBITDA_Multiples_Assumptions, PPE_Additions_Assumptions, PPE_Retirements_Assumptions, Depreciation_Expense_Assumptions, IP_Additions_Assumptions, IP_Retirements_Assumptions, Goodwill_Impairment_Assumptions, Minimum_Cash_Balance_Assumptions, Marketable_Securities_Assumptions, AR_Days_Assumptions, Doubtful_Accounts_Allowance_Assumptions, Inventory_COGS_Turns_Assumptions, Inventory_Reserve_Assumptions, Prepaid_Expenses_Assumptions, Other_CA_Assumptions, Other_CL_Assumptions, Funded_Debt_Assumptions, Funded_Debt_Allocation_Assumptions, Treasury_Bill_Rate_Assumptions, Default_Risk_Spread_Assumptions, Regulatory_Risk_Spread_Assumptions, Prime_Multiples_Assumptions, Liquidity_Risk_Premium_Assumptions, Equity_Risk_Premium_Assumptions, CS_Par_Assumptions, CS_PaidIn_Assumptions, CS_Dividend_Payout_Assumptions, CS_Outstanding_Assumptions, ISO_Authorized_Assumptions, PS_Par_Assumptions, PS_PaidIn_Assumptions, PS_Dividend_Payout_Series_A_Assumptions, New_PE_Series_B_Payout_Assumptions, New_PE_Pct_Ownership_Payout_Assumptions,PE_Dividend_Payout_Series_B_Assumptions, Historical_Income_Statement, Historical_Balance_Sheet
+from .models import Historical_Income_Statement, Historical_Balance_Sheet, Historical_Cash_Flow_Statement, Assumptions
 
-
-#class AssumptionsInline(admin.StackedInline):
-    #model = Assumptions
-    #extra = 5
-
-#class AssumptionsAdmin(admin.ModelAdmin):
-    #inlines = [AssumptionsInline]
-
-#admin.site.register(Assumptions)
+admin.site.register(Assumptions)
 admin.site.register(Historical_Income_Statement)
 admin.site.register(Historical_Balance_Sheet)
 admin.site.register(Historical_Cash_Flow_Statement)
-admin.site.register(Scenario_Percentages)
-admin.site.register(Revenue_Assumptions)
-admin.site.register(COGS_Assumptions)
-admin.site.register(Selling_Marketing_Assumptions)
-admin.site.register(General_Administrative_Assumptions)
-admin.site.register(Research_Development_Assumptions)
-admin.site.register(Income_Tax_Provision_Assumptions)
-admin.site.register(EBITDA_Multiples_Assumptions)
-admin.site.register(PPE_Additions_Assumptions)
-admin.site.register(PPE_Retirements_Assumptions)
-admin.site.register(Depreciation_Expense_Assumptions)
-admin.site.register(IP_Additions_Assumptions)
-admin.site.register(IP_Retirements_Assumptions)
-admin.site.register(Goodwill_Impairment_Assumptions)
-admin.site.register(Minimum_Cash_Balance_Assumptions)
-admin.site.register(Marketable_Securities_Assumptions)
-admin.site.register(AR_Days_Assumptions)
-admin.site.register(Doubtful_Accounts_Allowance_Assumptions)
-admin.site.register(Inventory_COGS_Turns_Assumptions)
-admin.site.register(Inventory_Reserve_Assumptions)
-admin.site.register(Prepaid_Expenses_Assumptions)
-admin.site.register(Other_CA_Assumptions)
-admin.site.register(Other_CL_Assumptions)
-admin.site.register(Funded_Debt_Assumptions)
-admin.site.register(Funded_Debt_Allocation_Assumptions)
-admin.site.register(Treasury_Bill_Rate_Assumptions)
-admin.site.register(Default_Risk_Spread_Assumptions)
-admin.site.register(Regulatory_Risk_Spread_Assumptions)
-admin.site.register(Prime_Multiples_Assumptions)
-admin.site.register(Liquidity_Risk_Premium_Assumptions)
-admin.site.register(Equity_Risk_Premium_Assumptions)
-admin.site.register(CS_Par_Assumptions)
-admin.site.register(CS_PaidIn_Assumptions)
-admin.site.register(CS_Dividend_Payout_Assumptions)
-admin.site.register(CS_Outstanding_Assumptions)
-admin.site.register(ISO_Authorized_Assumptions)
-admin.site.register(PS_Par_Assumptions)
-admin.site.register(PS_PaidIn_Assumptions)
-admin.site.register(PS_Dividend_Payout_Series_A_Assumptions)
-admin.site.register(New_PE_Series_B_Payout_Assumptions)
-admin.site.register(New_PE_Pct_Ownership_Payout_Assumptions)
-admin.site.register(PE_Dividend_Payout_Series_B_Assumptions)
+
 
