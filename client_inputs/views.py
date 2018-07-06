@@ -25,10 +25,9 @@ def get_assumptions(request):
 					
 
 
-    else:
-
-        formset = modelformset_factory(Assumptions, form = AssumptionsForm, extra = 5)    
-	  
+    formset = modelformset_factory(Assumptions, form = AssumptionsForm, extra = 5)    
+		        
+       
 
     return render(request, 'assumptions.html', {'formset': formset})
 
